@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Organizador de Gastos Mensais</title>
+</head>
+<body>  
+    <header>
+     <h1>Organizador de Gastos Mensais</h1>
+     <input type="number" id="renda-mensal" placeholder="Sua renda mensal (R$)" step="100.00">
+     <form id="form-despesa">
+        <input type="text" id="descricao" placeholder="Descrição da despesa" required>
+        <input type="number" id="valor" placeholder="Valor (R$)" step="100.00" required>
+        <input type="date" id="data" required>
+        <button type="submit">Adicionar Despesa</button>
+     </form>
+    </header>
+    <main>
+         <section id="lista-despesas">
+         </section>
+         <section id="resumo">
+            <h2>RESUMO MENSAL</h2>
+            <p>
+                Total Gasto:
+                <span class="total-valor">R$ <span id="total-despesas">0,00</span></span>
+            </p>
+            <p id="resumo-mensagem"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
